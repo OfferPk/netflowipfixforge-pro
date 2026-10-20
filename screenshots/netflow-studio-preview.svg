@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgDarkFlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#020409"/>
+    </linearGradient>
+    <linearGradient id="accentGradFlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgDarkFlow)"/>
+
+  <!-- Top App Header -->
+  <rect x="30" y="24" width="1140" height="60" rx="10" fill="#0b1329" stroke="#1a2744" stroke-width="1.5"/>
+  <rect x="46" y="38" width="95" height="32" rx="8" fill="url(#accentGradFlow)"/>
+  <text x="93" y="59" fill="#030712" font-family="-apple-system, sans-serif" font-weight="900" font-size="12" text-anchor="middle">RFC 7011</text>
+  
+  <text x="155" y="55" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="800" font-size="18">NetFlowIPFIXForge Pro</text>
+  <text x="410" y="55" fill="#22d3ee" font-family="-apple-system, sans-serif" font-weight="600" font-size="12">v1.0.0</text>
+  <text x="460" y="55" fill="#64748b" font-family="-apple-system, sans-serif" font-size="13">| Zero-Trust Flow Telemetry Studio &amp; Template Modeler</text>
+
+  <rect x="850" y="40" width="150" height="28" rx="14" fill="#06b6d4" fill-opacity="0.15" stroke="#06b6d4" stroke-opacity="0.4"/>
+  <text x="925" y="58" fill="#22d3ee" font-family="-apple-system, sans-serif" font-weight="600" font-size="11" text-anchor="middle">IPFIX / DTLS 4740</text>
+
+  <rect x="1015" y="40" width="145" height="28" rx="14" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.4"/>
+  <text x="1087" y="58" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="600" font-size="11" text-anchor="middle">ZERO-TRUST VERIFIED</text>
+
+  <!-- Left Column: Template & Header Parameters -->
+  <rect x="30" y="100" width="555" height="545" rx="12" fill="#0b1329" stroke="#1a2744" stroke-width="1.5"/>
+  <text x="50" y="130" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">1. Protocol Version &amp; Exporter Scope</text>
+
+  <rect x="50" y="145" width="245" height="48" rx="6" fill="#030712" stroke="#1a2744"/>
+  <text x="60" y="163" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">PROTOCOL VERSION</text>
+  <text x="60" y="182" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="700">RFC 7011 IPFIX (v10)</text>
+
+  <rect x="315" y="145" width="250" height="48" rx="6" fill="#030712" stroke="#1a2744"/>
+  <text x="325" y="163" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">TRANSPORT PROTOCOL</text>
+  <text x="325" y="182" fill="#34d399" font-family="monospace" font-size="12" font-weight="700">DTLS / TLS (Port 4740)</text>
+
+  <!-- Template Elements List -->
+  <text x="50" y="220" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="700" font-size="13">2. Template FlowSet #256 (12 Information Elements - 55 Bytes)</text>
+  
+  <rect x="50" y="230" width="515" height="30" rx="4" fill="#070d1d" stroke="#1a2744"/>
+  <text x="65" y="250" fill="#38bdf8" font-family="monospace" font-size="11">#8  sourceIPv4Address (ipv4Address, 4B) &bull; #12 destinationIPv4Address (4B)</text>
+
+  <rect x="50" y="265" width="515" height="30" rx="4" fill="#070d1d" stroke="#1a2744"/>
+  <text x="65" y="285" fill="#38bdf8" font-family="monospace" font-size="11">#7  sourceTransportPort (2B) &bull; #11 destinationTransportPort (2B) &bull; #4 proto (1B)</text>
+
+  <rect x="50" y="300" width="515" height="30" rx="4" fill="#070d1d" stroke="#1a2744"/>
+  <text x="65" y="320" fill="#34d399" font-family="monospace" font-size="11">#1  octetDeltaCount (unsigned64, 8B) &bull; #2 packetDeltaCount (unsigned64, 8B)</text>
+
+  <rect x="50" y="335" width="515" height="30" rx="4" fill="#070d1d" stroke="#1a2744"/>
+  <text x="65" y="355" fill="#a855f7" font-family="monospace" font-size="11">#152 flowStartMilliseconds (8B) &bull; #153 flowEndMilliseconds (8B)</text>
+
+  <!-- Hardening Controls Grid -->
+  <text x="50" y="395" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="700" font-size="13">3. Telemetry Hygiene &amp; Sampling Controls</text>
+  <rect x="50" y="405" width="245" height="50" rx="6" fill="#070d1d" stroke="#10b981" stroke-width="1.2"/>
+  <text x="65" y="425" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="11">⏱️ Template Timeout &lt;= 60s</text>
+  <text x="65" y="443" fill="#94a3b8" font-family="monospace" font-size="10">Eliminates decoder drops</text>
+
+  <rect x="315" y="405" width="250" height="50" rx="6" fill="#070d1d" stroke="#10b981" stroke-width="1.2"/>
+  <text x="330" y="425" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="11">📊 Option Template Export</text>
+  <text x="330" y="443" fill="#94a3b8" font-family="monospace" font-size="10">Accurate metric scaling</text>
+
+  <rect x="50" y="470" width="515" height="45" rx="6" fill="#030712" stroke="#1a2744"/>
+  <text x="65" y="490" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">FLOW TIMEOUT CACHE:</text>
+  <text x="65" y="506" fill="#38bdf8" font-family="monospace" font-size="11">Active: 60s &bull; Inactive: 15s &bull; Observation Domain ID: 10</text>
+
+  <text x="50" y="555" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">&bull; 64-bit volume counters prevent integer wrapping on 100G/400G spine links</text>
+  <text x="50" y="580" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">&bull; Epoch millisecond timestamps allow sub-second microburst traffic forensics</text>
+  <text x="50" y="615" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="11">✅ Compliant with RFC 7011, RFC 7012 &amp; Cisco FNF Architecture</text>
+
+  <!-- Right Column: Scorecard & Wireframe / Synthesizer -->
+  <rect x="615" y="100" width="555" height="545" rx="12" fill="#0b1329" stroke="#1a2744" stroke-width="1.5"/>
+
+  <!-- Score banner -->
+  <rect x="635" y="120" width="515" height="65" rx="10" fill="#070d1d" stroke="#1a2744"/>
+  <rect x="650" y="128" width="48" height="48" rx="8" fill="#10b981" fill-opacity="0.2" stroke="#10b981"/>
+  <text x="674" y="160" fill="#34d399" font-family="monospace" font-weight="800" font-size="22" text-anchor="middle">A+</text>
+  <text x="715" y="145" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">Zero-Trust Flow Score: 100 / 100</text>
+  <text x="715" y="165" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11">RFC 7011 DTLS • 64-bit Counters • 60s Template Cadence • Option FlowSet</text>
+
+  <!-- Binary Wireframe Preview -->
+  <text x="635" y="210" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="700" font-size="13">RFC 7011 IPFIX Binary Wireframe (Hex Dump)</text>
+  <rect x="635" y="220" width="515" height="90" rx="8" fill="#020409" stroke="#1a2744"/>
+  <text x="650" y="242" fill="#38bdf8" font-family="monospace" font-size="10">0000:  00 0a 00 84 66 fb 42 10  00 00 03 e9 00 00 00 0a  |....f.B.........|</text>
+  <text x="650" y="262" fill="#38bdf8" font-family="monospace" font-size="10">0010:  00 02 00 34 01 00 00 0c  00 08 00 04 00 0c 00 04  |...4............|</text>
+  <text x="650" y="282" fill="#38bdf8" font-family="monospace" font-size="10">0020:  00 07 00 02 00 0b 00 02  00 04 00 01 00 06 00 02  |................|</text>
+  <text x="650" y="302" fill="#38bdf8" font-family="monospace" font-size="10">0030:  01 00 00 3b 0a c8 04 01  c6 33 64 2c d0 00 01 bb  |...;.....3d,....|</text>
+
+  <!-- Synthesizer Output -->
+  <text x="635" y="335" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="700" font-size="13">Multi-Vendor Synthesizer (Active: Cisco Catalyst FNF)</text>
+  <rect x="635" y="345" width="515" height="280" rx="8" fill="#020409" stroke="#1a2744"/>
+  <text x="650" y="370" fill="#64748b" font-family="monospace" font-size="10">! Cisco IOS-XE Flexible NetFlow (FNF) Zero-Trust Pipeline</text>
+  <text x="650" y="395" fill="#c084fc" font-family="monospace" font-size="10">flow record FNF_RECORD_SECURE</text>
+  <text x="650" y="415" fill="#c084fc" font-family="monospace" font-size="10"> match ipv4 source address / destination address</text>
+  <text x="650" y="435" fill="#38bdf8" font-family="monospace" font-size="10"> collect counter bytes long / counter packets long</text>
+  <text x="650" y="455" fill="#38bdf8" font-family="monospace" font-size="10"> collect timestamp absolute first / timestamp absolute last</text>
+  <text x="650" y="485" fill="#34d399" font-family="monospace" font-size="10">flow exporter FNF_EXPORTER_SECURE</text>
+  <text x="650" y="505" fill="#34d399" font-family="monospace" font-size="10"> destination flow-collector-01.corp.internal transport udp 4740</text>
+  <text x="650" y="525" fill="#34d399" font-family="monospace" font-size="10"> export-protocol ipfix template data timeout 60</text>
+  <text x="650" y="565" fill="#94a3b8" font-family="monospace" font-size="10"># Also synthesizes: Juniper Junos, Linux pmacct, Logstash, ntopng</text>
+  <text x="650" y="595" fill="#38bdf8" font-family="-apple-system, sans-serif" font-weight="700" font-size="11">✅ 1-Click Multi-Vendor Telemetry Export</text>
+</svg>
